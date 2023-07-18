@@ -7,6 +7,10 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 def main_page():
     return render_template('home.html')
 
+@app.route('/cart')
+def cart():
+    return render_template('cart.html')
+
 @app.route('/product')
 def pro():
     return render_template('product.html')

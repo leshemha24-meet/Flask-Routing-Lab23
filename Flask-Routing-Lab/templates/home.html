@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #dfbf9f;
+            font-size: 1.2em;
+        }
+
+        .title-bar {
+            background-color: #b87a3d;
+            margin: 0;
+            padding: 0;
+
+            margin-bottom: 2em;        
+        }
+
+        .title {
+            margin: 1.25em;
+        }
+
+
+ </style>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
@@ -8,22 +33,28 @@
 
 <script src="script.js"></script>
 
-<h1> LH Cookies </h1>
+    <div class="title-bar">
+    <h1> LH Cookies </h1>
+    </div>
 
-<h2 id="des"> What Is LH Cookies? </h2>
+<h2 class="title" id="des"> What Is LH Cookies? </h2>
 
 <p> LH Cookies is a bakery which specializes in baking cookies and delievers pastries straight to your home! </p>
-<h2 id="popular"> Our Popular Purchases </h2>
+<h2 class="title" id="popular"> Our Popular Purchases </h2>
+
 
 <a href="{{ url_for('pro') }}"><img src="static/cookie.jpg" alt="LH ChocoChip Cookie" width="300" height="300"></a>
 <img src="static/cupcake.jpg" alt="LH ChoCupcake" width="300" height="300">
 <img src="static/pie.jpg" alt="LH Appie" width="300" height="300">
 
-<a href="/cookies"> COOKIES </a>
-<a href="/cakes"> CAKES </a>
-<a href="/cupcakes"> CUPCAKES </a>
-<a href="/pies"> PIES </a>
+<br>
 
+<a href="/cookies"><button>COOKIES</button></a>
+<a href="/cakes"><button>CAKES</button></a>
+<a href="/cupcakes"><button>CUPCAKES</button></a>
+<a href="/pies"><button>PIES</button></a>
+
+<a href="{{ url_for('cart') }}"><button>View Cart</button></a>
 
 </body>
 </html>

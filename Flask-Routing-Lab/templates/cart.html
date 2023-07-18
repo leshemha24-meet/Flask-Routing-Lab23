@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <style> 
+    
+    body {
+            background-color: #dfbf9f;
+        } 
+
+    .title-bar {
+            background-color: #b87a3d;
+            margin: 0;
+            padding: 0;
+
+            margin-bottom: 2em;        
+        }
+
+     </style>
     <meta charset="UTF-8">
     <title>Cart</title>
 </head>
 <body>
+
+<div class="title-bar"> <h1> Your Pastry Cart </h1> </div>
+<a href="{{ url_for('main_page') }}"><button>Go Back to Home Page</button></a>
 
 </body>
 </html>
